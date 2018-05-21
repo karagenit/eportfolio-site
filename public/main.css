@@ -4,5 +4,16 @@ body {
     margin-top: 15px;
 }
 
+a,
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .card {
     margin-top: 10px;
+}
+
+.card:hover {
+    background-color: #eee;
+}

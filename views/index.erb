@@ -1,11 +1,10 @@
 <h1>Canvas Public ePortfolios</h1>
 
 <% for @entry in data %>
-    <div class="card">
+    <a class="card" href="https://carmel.instructure.com/eportfolios/<%= @entry['ID'] %>">
         <div class="card-body">
             <h5 class="card-title"><%= @entry['Title'] %></h5>
             <h6 class="card-subtitle mb-2 text-muted">By <%= @entry['Author'] %></h6>
-            <a href="https://carmel.instructure.com/eportfolios/<%= @entry['ID'] %>" class="card-link">View Page</a>
         </div>
-    </div>
+    </a>
 <% end %>
